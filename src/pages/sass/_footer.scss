@@ -1,0 +1,32 @@
+.footer {
+  height: 260px;
+  padding-top: 42px;
+  font-size: 12px;
+  text-align: center;
+  background: #E6E6E6;
+
+  .info {
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .info,
+  .info-list {
+    width: $main-width;
+  }
+
+  .info-list {
+    font-size: 0;
+
+    li {
+      @include inline-block();
+      width: 142px;
+      height: 54px;
+      background: #fff;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

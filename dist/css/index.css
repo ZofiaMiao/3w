@@ -1,0 +1,37 @@
+.top-container { font-size: 0; margin-bottom: 40px; }
+
+.top-container .top-item { display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
+
+.aside-container { width: 300px; border: 1px solid #E5E5E5; margin-right: 19px; }
+
+.aside-container .menu-item { height: 66px; line-height: 60px; padding-left: 20px; font-size: 0; background: #fff; }
+
+.aside-container .menu-item:nth-child(odd) { background: #F7F6F2; }
+
+.aside-container .menu-item .menu-btn { font-size: 18px; width: 50%; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
+
+.top-container .swiper-container { width: 1000px; height: 398px; border: 1px solid #E5E5E5; font-size: 20px; background: #39ADE7; }
+
+.recommend-module .module-title { padding-bottom: 11px; margin-bottom: 30px; border-bottom: 2px solid #ddd; position: relative; }
+
+.recommend-module .module-title:after { position: absolute; content: ''; width: 120px; height: 2px; background: #39ADE7; left: 0; bottom: -1px; }
+
+.recommend-module .module-title .name { font-size: 24px; color: #333; }
+
+.recommend-module .module-title .more-btn { font-size: 18px; color: #666; float: right; _display: inline; }
+
+.recommend-list { font-size: 0; }
+
+.recommend-list .recommend-item-container { display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 25%; height: 160px; margin-bottom: 30px; }
+
+.recommend-list .recommend-item { font-size: 14px; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
+
+.recommend-list .recommend-name { font-size: 20px; }
+
+.recommend-list .recommend-memo { color: #808080; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+
+.recommend-list .info-detail { color: #999; }
+
+.recommend-list .recomment-left { width: 120px; margin-right: 14px; }
+
+.recommend-list .recomment-right { width: 169px; height: 100%; }

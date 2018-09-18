@@ -1,0 +1,117 @@
+@import "_variable";
+@import "_setting";
+@import "_mixin";
+
+.top-container {
+  font-size: 0;
+  margin-bottom: 40px;
+
+  .top-item {
+    @include inline-block;
+  }
+
+  $border-color: #E5E5E5;
+  @at-root .aside-container {
+    width: 300px;
+    border: 1px solid $border-color;
+    margin-right: 19px;
+
+    .menu-item {
+      height: 66px;
+      line-height: 60px;
+      padding-left: 20px;
+      font-size: 0;
+      background: #fff;
+
+      &:nth-child(odd) {
+        background: #F7F6F2;
+      }
+
+      .menu-btn {
+        font-size: 18px;
+        width: 50%;
+        @include inline-block();
+      }
+    }
+  }
+
+  .swiper-container {
+    width: 1000px;
+    height: 398px;
+    border: 1px solid $border-color;
+
+    // todo 图片放上后删除
+    font-size: 20px;
+    background: $header-blue;
+  }
+}
+
+.recommend-module {
+  .module-title {
+    padding-bottom: 11px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 120px;
+      height: 2px;
+      background: $header-blue;
+      left: 0;
+      bottom: -1px;
+    }
+
+    .name {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .more-btn {
+      font-size: 18px;
+      color: #666;
+
+      @include pull-right;
+    }
+  }
+
+  @at-root .recommend-list {
+    font-size: 0;
+
+    .recommend-item-container {
+      @include inline-block();
+      width: 25%;
+      height: 160px;
+      margin-bottom: 30px;
+    }
+
+    .recommend-item {
+      font-size: 14px;
+      @include inline-block();
+    }
+
+    .recommend-name {
+      font-size: 20px;
+    }
+
+    .recommend-memo {
+      color: #808080;
+      @include line-clamp(3);
+    }
+
+    .info-detail {
+      color: #999;
+    }
+
+    .recomment-left {
+      width: 120px;
+      margin-right: 14px;
+    }
+
+    .recomment-right {
+      width: 169px;
+      height: 100%;
+    }
+  }
+}

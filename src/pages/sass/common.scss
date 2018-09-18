@@ -1,0 +1,29 @@
+@import "_setting";
+@import "_mixin";
+@import "_variable";
+@import "_header";
+@import "_footer";
+
+* {
+  @include box-sizing;
+}
+
+body {
+  background: #F6F6F6;
+}
+
+.inline-block {
+  @include inline-block();
+}
+
+input,
+select {
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.main {
+  width: $main-width;
+  margin: 0 auto;
+}

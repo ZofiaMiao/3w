@@ -1,0 +1,130 @@
+.header {
+  height: 90 + 60px;
+  width: 100%;
+  min-width: $main-width;
+  color: #fff;
+
+  .header-box {
+    background: $header-blue;
+  }
+
+  .header-container {
+    width: $main-width;
+    height: 90px;
+    margin: 0 auto;
+
+    @include clearfix;
+  }
+
+  .logo-container {
+    width: 113 + 139px;
+    height: 100%;
+    overflow: hidden;
+    @include pull-left;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .change-lan,
+  .search-container,
+  .search-input,
+  .search-btn,
+  .nav li {
+    @extend %inline-block;
+  }
+
+  .center-container {
+    text-align: center;
+    margin: 21px 0 0 134px;
+    font-size: 0;
+    @include pull-left;
+  }
+
+  .nav {
+    width: 339px;
+    margin-top: 36px;
+    text-align: right;
+    @include pull-right;
+
+    li {
+      font-size: 20px;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .change-lan,
+  .search-input,
+  .search-btn {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+  }
+
+  .search-container {
+    position: relative;
+  }
+
+  .fa {
+    position: absolute;
+    font-size: 20px;
+    color: #333;
+    top: 12px;
+    left: 15px;
+  }
+
+  .change-lan {
+    width: 80px;
+    margin-right: 20px;
+    padding-left: 14px;
+    @include border-radius(4px);
+  }
+
+  .search-input {
+    width: 260px;
+    padding-left: 45px;
+    @include border-radius(4px 0 0 4px);
+  }
+
+  $btn-green: #009944;
+  .search-btn {
+    height: 48px;
+    width: 60px;
+    background: $btn-green;
+    text-align: center;
+    cursor: pointer;
+    @include border-radius(0 4px 4px 0);
+    @include transition(background .1s);
+
+    &:hover {
+      background: lighten($btn-green, 5%);
+    }
+
+    &:active {
+      background: $btn-green;
+    }
+  }
+
+  .hot-container {
+    width: $main-width;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    font-size: 16px;
+    color: $header-blue;
+    text-align: left;
+    @include ellipsis;
+
+    .key-word {
+      color: #333;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
